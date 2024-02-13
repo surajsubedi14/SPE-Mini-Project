@@ -19,4 +19,4 @@
         state: started
         
     - name: Running container
-      shell: docker run -it -d 8083:8080 --name calculator surajiiitb/calculator:docker
+      shell: docker run -d -p 8083:8080 --name calculator surajiiitb/calculator:docker
