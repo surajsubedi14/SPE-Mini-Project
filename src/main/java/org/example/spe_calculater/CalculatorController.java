@@ -8,6 +8,10 @@ public class CalculatorController {
     // Square root function - √x
     @GetMapping("/sqrt")
     public double squareRoot(@RequestParam double x) {
+        if (x < 0.0) {
+            throw new IllegalArgumentException("Square root is not defined for negative numbers.");
+        }
+
         return Math.sqrt(x);
     }
     // Factorial function - x!
