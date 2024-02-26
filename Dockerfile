@@ -1,5 +1,6 @@
 # Use the official Maven image as the base image
 FROM maven:3.8.3-openjdk-17 AS build
+#ss
 
 # Set the working directory inside the container
 WORKDIR /app
